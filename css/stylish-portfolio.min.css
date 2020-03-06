@@ -370,7 +370,7 @@ a:hover {
 }
 
 /* Intro-part Asuna */
-#int_color_font {
+.int_color_font {
     color: rgb(5, 59, 141);
 }
  
