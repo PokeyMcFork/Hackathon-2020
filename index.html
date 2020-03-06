@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Grace Hoppe - The Superwoman</title>
+  <title>Grace Hopper - The Superwoman</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,7 @@
 
   <!-- Additional css -->
   <link rel="stylesheet" href="../css/lb-style.css">
+
 <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/d6343cbdf9.js" crossorigin="anonymous"></script>
 
@@ -56,7 +57,7 @@
       </li>
     </ul>
   </nav>
-
+  
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto jumbotron">
@@ -72,15 +73,18 @@
     <div class="overlay"></div>
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
+  <!-- Intro - worked on by Asuna -->
+  <section class="content-section" id="intro">
+    <div class="container text-left">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+        <div class="col-md-6">
+          <h2 id="int_color_font_hr">Who is Grace Hopper?</h2>
+          <p class="lead mb-5">She is a <strong class="int_color_font">computer programmer <i class="fas fa-laptop"></i></strong> and a <strong class="int_color_font">rear admiral <i class="far fa-compass"></i></strong>.</p>
+          <p class="lead mb-5">She developed a programming language called <strong class="int_color_font">COBOL <i class="fas fa-code"></i></strong>.</p>
+          <p class="lead mb-5">COBAL is designed with business users in mind and <strong class="int_color_font">helped many people in various business fields <i class="fas fa-hands-helping"></i></strong>.</p>
+        </div>
+        <div class="col-md-6">
+          <div id="int_circle-photo" style="background-image: url(img/Grace_image_int.jpg);"></div>
         </div>
       </div>
     </div>
@@ -89,7 +93,36 @@
   <!-- Tech Work and Navy Career - worked on by Stephen -->
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
-      
+      <article>
+        <div class="row">
+            <h3 class="col align-self-center">Her Early Life</h3>
+            <p>
+                Grace Brewster Murray was born on December 9th, 1906 in New York.
+                She was always very curious as a child, a trait she kept for her whole life.
+                At the age of seven, she wanted to figure out how an alarm clock worked, and took apart 7 clocks before
+                her mother realised what she was doing! <span>(She was then given a single clock to work with.)</span>
+            </p>
+        </div>
+        <div>
+            <h3 class="col align-self-center">Her Navy Career</h3>
+            <p>At the US's entry to World War II, Grace tried to enlist in the Navy, but was rejected for 3 main reasons:
+            <ul>
+                <li>She was 34 years old and too old to enlist.</li>
+                <li>She was wasn't heavy enough for her height</li>
+                <li>She was a maths professor at Vassar College, and was considered too valuable to the war effort.</li>
+            </ul>
+            Despite this, she would later <span>(In 1943)</span> go on leave from the College to volunteer for the US Navy Reserve.
+            <span>(Even then, she had to get a special exemption, as she was still around 7kg underweight for the Navy!)</span></p>
+
+            <p>She reported for duty in December of that year, and trained in the Smith College Naval Reserve School in Massachusetts.</p>
+
+            <p>She then went on do graduate the next year, and then served as a lieutenant on the Buerau of Ships Computation Project at Harvard, 
+            working on the Harvard Mark 1 <span>(A computer that used moveing parts instead of modern silicon boards!)</span></p>
+
+            <p>Here she seemed to develop a love for computers, as at the end of the war she chose to continue working at the Mark 1 lab, until 1949.
+            <span>(she even turned down a full Professorship at Vassar College, to work as a researcher at Harvard on computers.)</span></p>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -159,13 +192,14 @@
     </div>
   </section>
 
-  <!-- Call to Action -->
+  <!-- Quiz section - worked on by Igor -->
   <section class="content-section bg-primary text-white">
     <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+      <h2 class="mb-4">See how well you know Grace now. Try a short quiz?</h2>
+      <a class="btn btn-xl btn-light mr-4" onclick="startQuiz()">Yessss!</a>
+      <a class="btn btn-xl btn-dark" onclick="displayMessage()">Not now.</a>
     </div>
+    <div id="quiz-area"></div>
   </section>
 
 
@@ -220,6 +254,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
+
+  <!-- Quiz script -->
+  <script src="js/quiz.js"></script>
 
 </body>
 
