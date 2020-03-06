@@ -21,6 +21,8 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet" type="text/css">
 
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
 
 <body id="page-top">
@@ -154,10 +156,11 @@
   <!-- Quiz section - worked on by Igor -->
   <section class="content-section bg-primary text-white">
     <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+      <h2 class="mb-4">See how well you know Grace now. Try a short quiz?</h2>
+      <a class="btn btn-xl btn-light mr-4" onclick="startQuiz()">Yessss!</a>
+      <a class="btn btn-xl btn-dark" onclick="displayMessage()">Not now.</a>
     </div>
+    <div id="quiz-area"></div>
   </section>
 
   <!-- Map -->
@@ -207,6 +210,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
+
+  <!-- Quiz script -->
+  <script src="js/quiz.js"></script>
 
 </body>
 
