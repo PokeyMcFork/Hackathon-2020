@@ -15,10 +15,31 @@ body {
   background: #f1c40f;
 }
 
+.int_color_font {
+    color: rgb(5, 59, 141);
+}
+#int_color_font_hr {
+    color: rgb(5, 59, 141);
+    margin-bottom: 40px 
+}
+#int_circle-photo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin: 10px auto 30px;
+    display: block;
+
 #quiz-area {
     display: none;
     margin: 0 auto;
     text-align: center;
     font-size: 1.5em;
     padding-top: 1em;
+
 }
