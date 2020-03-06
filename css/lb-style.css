@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina+Sketch&display=swap');
+
+body {
+  background: #f1c40f;
+}
+
 .d-flex .jumbotron{
-    background-color: rgba(241, 196, 13,0.7);
+    background-color: rgba(241, 196, 13,0.9);
     border: 5px solid #1aa4ce;
     
 }
@@ -11,7 +17,26 @@ header div .riddle img {
     /* border-radius: 50%; */
 }
 
-body {
-  background: #f1c40f;
+header div .riddle h1 {
+    color: #fff;
+    font-family: 'Londrina Sketch', sans-serif;
 }
 
+btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-color: #fff!important;
+    color: #1d809f!important;
+    border: 3px solid #1d809f;
+}
+
+header div a i {
+    font-size: 20px;
+}
+
+footer .row {
+    text-align: center;
+    color: #fff;
+}
+
+footer .row {
+    font-size: 20px;
+}
