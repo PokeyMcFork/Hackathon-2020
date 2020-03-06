@@ -1,0 +1,17 @@
+.d-flex .jumbotron{
+    background-color: rgba(241, 196, 13,0.7);
+    border: 5px solid #1aa4ce;
+    
+}
+
+header div .riddle img {
+    max-height: 100px;
+    background-color: white;
+    border: 3px solid #1aa4ce;
+    /* border-radius: 50%; */
+}
+
+body {
+  background: #f1c40f;
+}
+
